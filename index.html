@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HHL CLOCK </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="" class="logo">
+                <img src="logo-removebg-preview.png" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="index.html">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="donghonam.html">ĐỒNG HỒ NAM</a>
+                </div>
+                <div class="item">
+                    <a href="donghonu.html">ĐỒNG HỒ NỮ</a>
+                </div>
+                <div class="item">
+                    <a href="dangky.html">ĐĂNG KÝ</a>
+                </div>
+                <div class="item">
+                    <a href="https://www.facebook.com/profile.php?id=100068274614268">Liên hệ</a>
+                </div>
+            </div>
+            <div id="actions">
+                <div class="item">
+                    <img src="1.png" alt="" width="50px" onclick="showhidecart()">
+                    <span id="soluonghang"></span>
+                </div>
+            </div>
+            <div class="showgiohang" id="showgiohang">
+                <table>
+                    <tr>
+                        <td>STT</td>
+                        <td>Hình</td>
+                        <td>ĐƠN GIÁ </td>
+                        <td>Số Lượng</td>
+                        <td>Thành Tiền</td>
+                        <td>Xóa</td>
+                    </tr>
+                    <tbody id="mycart">
+                        
+                    </tbody>
+                </table>
+                <br>
+                <button onclick="xoatatca()">Xóa Tất CẢ</button>
+            </div>
+        </div>
+        <div id="banner">   
+            <div class="box-left">
+                <h2>
+                    <span>ĐỒNG HỒ</span>
+                    <br>
+                    <span>THƯỢNG HẠNG</span>
+                </h2>
+                <p>Chuyên cung cấp các sản phẩm đồng hồ chất lượng uy tín sang trọng quý phái</p>
+                <a href=""></a><button>Mua ngay</button>
+            </div>
+            <div class="box-right">
+                <img src="OIP.jpg" alt="" >
+                <img src="OIP1.jpg" alt="">
+                <img src="OIP3.jpg" alt="">
+            </div>
+            <div class="to-bottom">
+                <a href="">
+                    <img src="assets/to_bottom.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div id="wp-products">
+            <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
+            <ul id="list-products">
+                <div class="item">
+                    <img src="OIP 2.jpg" alt="" width="200px">
+                    <div class="stars">
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                    </div>
+                    <div class="name">ROLEX</div>
+                    <div class="price"><span>400.000.000</span> <span>VNĐ</span></div>
+                    <a href="dathang.html"><button >ĐẶT HÀNG</button></a>
+                </div>
+                <div class="item">
+                    <img src="OIP.jpg" alt="" width="200px">
+                    <div class="stars">
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                    </div>
+                    <div class="name">ROLEX</div>
+                    <div class="price"><span>460.000.000</span> <span>VNĐ</span></div>
+                     <a href="dathang.html"><button >ĐẶT HÀNG</button></a>
+                </div>
+                <div class="item">
+                    <img src="OIP1.jpg" alt="" width="200px">
+                    <div class="stars">
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                    </div>
+                    <div class="name">DAY-DATE</div>
+                    <div class="price"><span>250.000.000</span> <span>VNĐ</span></div>
+                     <a href="dathang.html"><button >ĐẶT HÀNG</button></a>
+                </div>
+                <div class="item">
+                    <img src="OIP3.jpg" alt="" width="200px">
+                    <div class="stars">
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                    </div>
+                    <div class="name">ROLEX</div>
+                    <div class="price"><span>300.000.000</span> <span>VNĐ</span></div>
+                    <a href="dathang.html"></a><button>ĐẶT HÀNG</button>
+                </div>
+                <div class="item">
+                    <img src="R.jpg" alt="" width="200px">
+                    <div class="stars">
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                    </div>
+                    <div class="name">ROLEX</div>
+                    <div class="price"><span>480.000.000</span> <span>VNĐ</span></div>
+                     <a href="dathang.html"><button >ĐẶT HÀNG</button></a>
+                </div>
+                <div class="item">
+                    <img src="OIP4.jpg" alt="" width="200px">
+                    <div class="stars">
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="astar.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                    </div>
+
+                    <div class="name">DATEJUST</div>
+                    <div class="price"><span>520.000.000</span> <span>VNĐ</span></div>
+                     <a href="dathang.html"><button >ĐẶT HÀNG</button></a>
+                </div>
+                <div class="item">
+                    <img src="OIP5.jpg" alt="" width="200px">
+                    <div class="stars">
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                    </div>
+                    <div class="name">OYSTER PERPETUAL</div>
+                    <div class="price"><span>360.000.000</span> <span>VNĐ</span></div>
+                     <a href="dathang.html"><button >ĐẶT HÀNG</button></a>
+                </div>
+                <div class="item">
+                    <img src="OIP6.jpg" alt="" width="200px">
+                    <div class="stars">
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                    </div>
+                    <div class="name">SKY-DWELLER</div>
+                    <div class="price"><span>250.000.000</span> <span>VNĐ</span></div>
+                     <a href="dathang.html"><button >ĐẶT HÀNG</button></a>
+                </div>
+                <div class="item">
+                    <img src="OIP7.jpg" alt="" width="200px">
+                    <div class="stars">
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                    </div>
+                    <div class="name">CELLINI MOONPHASE</div>
+                    <div class="price"><span>330.000.000</span> <span>VNĐ</span></div>
+                     <a href="dathang.html"><button >ĐẶT HÀNG</button></a>
+                </div>
+                <div class="item">
+                    <img src="OIP8.jpg" alt="" width="200px">
+                    <div class="stars">
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="star.png" alt="">
+                        </span>
+                    </div>
+                    <div class="name">YACHT-MASTER</div>
+                    <div class="price"><span>840.000.000</span> <span>VNĐ</span></div>
+                     <a href="dathang.html"><button >ĐẶT HÀNG</button></a>
+                </div>
+            </ul>
+            <div class="list-page">
+                <div class="item">
+                    <a href="">1</a>
+                </div>
+                <div class="item">
+                    <a href="index1.html">2</a>
+                </div>
+                
+            </div>
+            <div class="footer">
+                <div class="footer-main">
+                  <div id="muc1">
+                      <h4>Thông Tin</h4>
+                      <a href="vechungtoi.html"><p>DESGIN</p></a>
+                  </div>
+                  <div id="muc2">
+                      <h4>Trang liên hệ</h4>
+                      <a href="http://sinhvien.hueic.edu.vn/"><p>WWW.sinhvien.hueic.edu.vn </p></a>
+                      <div class="logo">
+                          <img src="logo-removebg-preview.png" alt="" height="100px">
+                      </div>
+                  </div>
+                  <div id="muc3">
+                      <h4>Địa chỉ liên hiện</h4>
+                      <a href="https://www.facebook.com/phqn.huynh.5"> <i class="fa-brands fa-facebook"></i></a>
+                      <a href=""><i class="fa-solid fa-envelope"></i></a>
+                      <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                </div>
+                <hr>
+                <div class="footer-tk">
+                    <p>© Bản quyền thuộc về. Thiết kế website Mấy Thằng Đệ </p>
+                </div>
+              </div>
+        </div>
+    </div>
+</header>
+    <script src="script.js"></script>
+</body>
+
+</html>
